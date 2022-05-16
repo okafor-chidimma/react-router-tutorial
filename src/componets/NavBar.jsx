@@ -11,7 +11,7 @@ const NavBar = (props) => {
     };
   };
   return (
-    <nav>
+    <nav className="nav">
       {/* use the link component to navigate to different component in your app and html anchor tag to navigate to a link outside of your application  */}
       {/* <Link to="/">Home</Link>
       {/* notice there is a / here, this is an absolute path. without the /, it becomes a relative route */}
@@ -23,6 +23,7 @@ const NavBar = (props) => {
       <NavLink style={navLinkStyles} to="/about">
         About
       </NavLink>
+      <NavLink to="/products">Products</NavLink>
     </nav>
   );
 };
